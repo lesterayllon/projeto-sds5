@@ -3,9 +3,7 @@ import DataTable from "components/DataTable";
 import DonutChart from "components/DonutChart";
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
-
-
-const Dashboard = () => {
+function Dashboard() {
   return (
     <>
       <NavBar />
@@ -15,18 +13,18 @@ const Dashboard = () => {
         <div className="row px-3">
           <div className="col-sm-6">
             <h5 className="text-center text-secondary">Taxa de Sucesso
-            <BarChart />
+              <BarChart />
             </h5>
           </div>
           <div className="col-sm-6">
             <h5 className="text-center text-secondary">Todas Vendas
-            <DonutChart />
+              <DonutChart />
             </h5>
           </div>
         </div>
         <div className="py-3">
-            <h2 className="text-primary">Todas as Vendas
-            </h2>
+          <h2 className="text-primary">Todas as Vendas
+          </h2>
         </div>
         <DataTable />
       </div>
